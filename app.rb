@@ -1,5 +1,5 @@
 require 'sinatra/base'
-require_relative 'student-orm/lib/models/student'
+require_relative 'student-orm-new/lib/models/student'
 require 'sqlite3'
 
 # Why is it a good idea to wrap our App class in a module?
