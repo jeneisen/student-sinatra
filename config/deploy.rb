@@ -1,9 +1,9 @@
 require 'bundler/capistrano'
-set :application, "practicing_student_profs"
+set :application, "student-sinatra"
 set :repository,  "git@github.com:jeneisen/student-sinatra.git"
 
 set :user, "jeneisen"
-set :deploy_to "/home/#{user}/#{application}"
+set :deploy_to "/home/jeneisen/student-sinatra"
 set :user_sudo, false
 
 set :scm, :git
