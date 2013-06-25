@@ -3,7 +3,7 @@ set :application, "student-sinatra"
 set :repository,  "git@github.com:jeneisen/student-sinatra.git"
 
 set :user, "jeneisen"
-set :deploy_to, "/students/#{user}/#{application}"
+set :deploy_to, "/home/#{user}/#{application}"
 set :use_sudo, false
 
 set :scm, :git
