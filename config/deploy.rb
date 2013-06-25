@@ -3,8 +3,8 @@ set :application, "student-sinatra"
 set :repository,  "git@github.com:jeneisen/student-sinatra.git"
 
 set :user, "jeneisen"
-set :deploy_to "/home/#{user}/#{application}"
-set :user_sudo, false
+set :deploy_to, "/home/#{user}/#{application}"
+set :use_sudo, false
 
 set :scm, :git
 
@@ -21,7 +21,7 @@ role :app, "198.199.77.83"                          # This may be the same as yo
 # if you're still using the script/reaper helper you will need
 # these http://github.com/rails/irs_process_scripts
 
-If you are using Passenger mod_rails uncomment this:
+#If you are using Passenger mod_rails uncomment this:
 namespace :deploy do
   task :start do ; end
   task :stop do ; end
