@@ -1,12 +1,18 @@
-<ul>
-<% @students.each do |student| %>
-  <li class="home-blog-post">
-    <div class="blog-thumb">
-      <img width="360" height="140" src="/img/DR_image.jpg" class="attachment-blog-thumb wp-post-image" alt="">
-    </div>
-    <div>
-      <div><h3><a href="<%=student.name%>"><%=student.name%>
-     </a></h3></div>
-    </div>
-<% end %>
-</ul>
+<html>
+  <head>
+  </head>
+  <body>
+    <ul>
+    <% @students.each do |student| %>
+      <li class="home-blog-post">
+        <div class="blog-thumb">
+          <img width="360" height="140" src="http://placekitten.com/360/140" class="attachment-blog-thumb wp-post-image" alt="">
+        </div>
+        <div>
+          <div><h3><a href="<%=student.name%>"><%=student.name%>
+         </a></h3></div>
+        </div>
+    <% end %>
+    </ul>
+  </body>
+</html>
