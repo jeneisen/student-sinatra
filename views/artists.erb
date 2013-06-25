@@ -1,0 +1,39 @@
+
+  <div class="section section-blog">
+    <div class="home-blog clearfix">
+      <ul>
+        <% @artists.each do |artist| %>
+
+        <!-- Begin 3 Student Row -->
+        <li class="home-blog-post">
+          <div class="blog-thumb">
+            <img width="360" height="140" src="http://placekitten.com/360/140" class="attachment-blog-thumb wp-post-image" alt="">
+          </div>
+
+          <div class="blog-title">
+            <div class="big-comment"><h3><a href="#"><%=artist%></a></h3></div>
+            <p class="home-blog-post-meta">Hysterical Tag Line</p>
+          </div>
+          <div class="clear"></div>
+
+          <div class="excerpt">
+            <p>Really interesting description no longer than 200 characters that gives people a quick idea of who you are. Something around this length should suffice, you've got plenty of room on your profile page.</p>
+          </div>
+          <div class="clear"></div>
+        </li>
+        <li class="home-blog-post">
+          <div class="blog-thumb">
+            <img width="360" height="140" src="http://placekitten.com/360/140" class="attachment-blog-thumb wp-post-image" alt="">
+          </div>
+          <%end%>
+        </ul>
+      </div>
+    </div>
+
+
+<!-- <ul>
+  <% @artists.each do |artist| %>
+  <li><%=artist%></li>
+  <%end%>
+</ul>
+ -->
