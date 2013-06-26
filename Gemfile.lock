@@ -1,6 +1,16 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    ap (0.1.1)
+      httparty (>= 0.7.7)
+    httparty (0.11.0)
+      multi_json (~> 1.0)
+      multi_xml (>= 0.5.2)
+    mini_portile (0.5.0)
+    multi_json (1.7.7)
+    multi_xml (0.5.4)
+    nokogiri (1.6.0)
+      mini_portile (~> 0.5.0)
     rack (1.5.2)
     rack-protection (1.5.0)
       rack
@@ -15,5 +25,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  ap
+  nokogiri
   sinatra
   sqlite3
